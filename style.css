@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Zeyada&display=swap');
+
+body {
+  margin: 0;
+  height: 100vh;
+  background: #f8f1e9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.paper {
+  position: absolute;
+  background: white;
+  padding: 20px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+  cursor: grab;
+  user-select: none;
+  touch-action: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.paper.dragging {
+  cursor: grabbing;
+  box-shadow: 0 30px 70px rgba(0,0,0,0.35);
+}
+
+.paper img {
+  width: 250px;
+  display: block;
+  pointer-events: none;
+}
+
+.paper.red {
+  background: #ffe6e6;
+}
+
+.paper.heart {
+  width: 120px;
+  height: 120px;
+  background: url('https://cdn.pixabay.com/photo/2016/03/31/19/25/cartoon-1294994__340.png') no-repeat center;
+  background-size: contain;
+  padding: 0;
+}
+
+p {
+  font-family: 'Zeyada', cursive;
+  font-size: 32px;
+  text-align: center;
+}
